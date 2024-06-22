@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Gotham";
+  src: url(./assets/fonts/GothamBook.otf);
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: 'Flama', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Gotham", sans-serif;
+}
+
+/* Skils Section CSS */
+.skills-section .slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.skills-section .slick-next,
+.skills-section .slick-prev {
+  color: #3A1D64;
+  height: 35px;
+}
+
+.curriculum-section .react-tabs__tab--selected {
+  border: 1px solid #3A1D64;
+  border-radius: 10px;
+}
+
+.curriculum-section .react-tabs__tab--selected:focus-visible {
+  outline: none;
+}
+
+.curriculum-section .react-tabs__tab-panel--selected {
+  background: #ffffff;
+  border: 1px solid #E7E6E6;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+  background-color: black !important;
+}
+
+.testimonial-card::before {
+  position: absolute;
+  content: '';
+  background: #DE3F0F;
+  width: 100%;
+  height: 100%;
+  bottom: -15px;
+  right: -15px;
+  z-index: -1;
+  border-radius: 15px;
+}
