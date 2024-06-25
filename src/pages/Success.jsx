@@ -28,7 +28,6 @@ const Success = () => {
     
     return (
         <>
-            <img src="https://tracking.adcanopus.com/aff_l?offer_id=37929&adv_sub=[Pass-back-Lead-ID]" width="1" height="1" />
             <Navbar/>
             <section className="bg-cover h-screen flex justify-center mt-24" style={{backgroundImage: `url(${successBg})`,
                 backgroundColor: 'rgba(0, 0, 0, 0.2)',
