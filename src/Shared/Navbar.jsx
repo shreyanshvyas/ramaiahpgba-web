@@ -47,7 +47,7 @@ const Navbar = () => {
         <Disclosure as="nav" className="shadow-xl bg-white py-4 fixed top-0 left-0 right-0 m-auto z-[999]">
       {({ open }) => (
         <>
-          <div className="container mx-auto md:px-3 md:px-10">
+          <div className="container mx-auto md:px-10">
             <div className="relative flex h-16 items-center justify-between">
               <div className="flex flex-1 items-center justify-start sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
@@ -66,7 +66,7 @@ const Navbar = () => {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          currentSection === item.id ? 'bg-[#FFF1F1] border-b border-b-2 border-orange' : 'text-gray-300 hover:bg-gray-700',
+                          currentSection === item.id ? 'bg-[#FFF1F1] border-b-2 border-orange' : 'text-gray-300 hover:bg-gray-700',
                           'lg:px-2 md:px-1 py-3 text-sm font-medium font-flama'
                         )}
                       >
