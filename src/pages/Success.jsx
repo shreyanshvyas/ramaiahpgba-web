@@ -5,16 +5,6 @@ import successBg from "../assets/img/ramaiah/5.jpg";
 import DownloadButton from "../Components/DownloadButton";
 
 const Success = () => {
-  useEffect(() => {
-    // Track page view
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "AW-11454303460");
-  }, []);
-
   return (
     <>
       <Navbar />

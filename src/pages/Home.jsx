@@ -9,18 +9,10 @@ import Curriculum from "../Sections/Curriculum";
 import Schedule from "../Sections/Schedule";
 import Testimonial from "../Sections/Testimonial";
 import Footer from "../Shared/Footer";
+import { useEffect } from "react";
 
 const Home = () => {
-  useEffect(() => {
-    // Track page view
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "AW-11454303460");
-  }, []);
-  
+
   return (
     <>
       <Navbar />

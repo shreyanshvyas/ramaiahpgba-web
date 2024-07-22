@@ -26,17 +26,18 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=AW-11454303460"
     ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "AW-11454303460");
-    </script>
   </head>
   <body>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      
+      // Initialize GTM after the library has loaded
+      window.addEventListener('load', function() {
+        gtag('js', new Date());
+        gtag('config', 'AW-11454303460');
+      });
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
