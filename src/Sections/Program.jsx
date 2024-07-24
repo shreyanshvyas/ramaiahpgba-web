@@ -52,7 +52,7 @@ const Program = () => {
                         programData.map((singleData,index)=>(
                             <div className="text-center shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] p-8 md:py-8 md:px-2 rounded-2xl" key={index}>
                                 <div className="h-[60px]">
-                                    <img src={singleData.icon} alt="icon" className="max-w-[50px] mx-auto"/>
+                                    <img src={singleData.icon} alt="icon" className="max-w-[50px] mx-auto" loading="lazy"/>
                                 </div>
                                 <h3 className="my-4 text-navy text-[20px] font-bold">{singleData.title}</h3>
                                 <p className="text-navy">{singleData.desc}</p>

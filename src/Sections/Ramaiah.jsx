@@ -1,4 +1,5 @@
 import Title from "../Components/Title"
+import YouTubeEmbed from "../Components/YoutubeEmbed";
 import img1 from "../assets/img/ramaiah/1.png"
 import img2 from "../assets/img/ramaiah/2.png"
 import img3 from "../assets/img/ramaiah/3.png"
@@ -14,14 +15,14 @@ const Ramaiah = () => {
                     <div>
                     <div className="relative mb-2 md:mb-0">
                         <div className="w-full h-full bg-orange absolute rounded-lg -right-3 -bottom-3"></div>
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/-gbb5yr8s6Q?si=ZDPDHaqoejMcn8sQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className="z-1 relative" allowfullscreen loading="lazy"></iframe>
+                        <YouTubeEmbed videoId="-gbb5yr8s6Q" />
                     </div>
                     </div>
                     <div>
-                        <img src={img2} alt="" className="lg:max-w-[300px] md:max-w-full mx-auto rounded-2xl "/>
+                        <img src={img2} alt="" className="lg:max-w-[300px] md:max-w-full mx-auto rounded-2xl" loading="lazy"/>
                     </div>
                     <div>
-                        <img src={img3} alt="" className="lg:max-w-[300px] md:max-w-full mx-auto rounded-2xl"/>
+                        <img src={img3} alt="" className="lg:max-w-[300px] md:max-w-full mx-auto rounded-2xl" loading="lazy"/>
                     </div>
                 </div>
             </div>

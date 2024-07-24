@@ -40,7 +40,7 @@ const Testimonial = () => {
                             <div className="border md:p-7 p-4 rounded-xl bg-white relative testimonial-card" key={index}>
                                 <div className="flex items-center gap-4 mb-3">
                                     <div className="max-w-[60px]">
-                                        <img src={testimoni.img} alt="client" className="max-w-[60px] rounded-[50px]"/>
+                                        <img src={testimoni.img} alt="client" loading="lazy" className="max-w-[60px] rounded-[50px]"/>
                                     </div>
                                 
                                     <div>

@@ -63,9 +63,9 @@ const Curriculum = () => {
                                     </h2>
 
                                     <div className="grid grid-cols-3 gap-2 items-center max-w-[300px]">
-                                        <img src={iconExcel} alt="excel" className="max-w-[60px]"/>
-                                        <img src={iconR} alt="r"  className="max-w-[60px]"/>
-                                        <img src={iconPython} alt="python"  className="max-w-[60px]"/>
+                                        <img src={iconExcel} alt="excel" loading="lazy" className="max-w-[60px]"/>
+                                        <img src={iconR} alt="r" loading="lazy" className="max-w-[60px]"/>
+                                        <img src={iconPython} alt="python" loading="lazy" className="max-w-[60px]"/>
                                     </div>
                                 </TabPanel>
 
@@ -83,9 +83,9 @@ const Curriculum = () => {
                                     </h2>
 
                                     <div className="grid grid-cols-3 gap-2 items-center max-w-[300px]">
-                                        <img src={iconMysql} alt="mysql" className="max-w-[60px]"/>
-                                        <img src={iconTab} alt="tab"  className="max-w-[60px]"/>
-                                        <img src={iconPower} alt="power"  className="max-w-[60px]"/>
+                                        <img src={iconMysql} alt="mysql" loading="lazy" className="max-w-[60px]"/>
+                                        <img src={iconTab} alt="tab" loading="lazy" className="max-w-[60px]"/>
+                                        <img src={iconPower} alt="power" loading="lazy" className="max-w-[60px]"/>
                                     </div>
                                 </TabPanel>
 
@@ -103,8 +103,8 @@ const Curriculum = () => {
                                     </h2>
 
                                     <div className="grid grid-cols-3 gap-2 items-center max-w-[300px]">
-                                        <img src={iconExcel} alt="excel" className="max-w-[60px]"/>
-                                        <img src={iconPython} alt="python "  className="max-w-[60px]"/>
+                                        <img src={iconExcel} alt="excel" loading="lazy" className="max-w-[60px]"/>
+                                        <img src={iconPython} alt="python" loading="lazy" className="max-w-[60px]"/>
                                     </div>
                                 </TabPanel>
 
@@ -122,8 +122,8 @@ const Curriculum = () => {
                                     </h2>
 
                                     <div className="grid grid-cols-3 gap-2 items-center max-w-[300px]">
-                                        <img src={iconExcel} alt="excel" className="max-w-[60px]"/>
-                                        <img src={iconPython} alt="python "  className="max-w-[60px]"/>
+                                        <img src={iconExcel} alt="excel" loading="lazy" className="max-w-[60px]"/>
+                                        <img src={iconPython} alt="python" loading="lazy"  className="max-w-[60px]"/>
                                     </div>
                                 </TabPanel>
                             </div>

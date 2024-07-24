@@ -96,7 +96,7 @@ const Faculties = () => {
                                     <div className="w-full h-full bg-orange absolute  z-0 rounded-lg -right-3 -bottom-3"></div>
                                     <div className="flex flex-col lg:flex-row border rounded-lg border-navy p-5 bg-white z-1 relative">
                                         <div className="lg:mr-5 max-w-[320px] mx-auto mb-5">
-                                            <img src={singleFaculty.img} alt="rajnish virmani" className="max-w-[200px]"/>
+                                            <img src={singleFaculty.img} alt="rajnish virmani" className="max-w-[200px]" loading="lazy"/>
                                         </div>
                                         <div className="text-navy">
                                             <h3 className="text-[20px] mb-1 font-bold font-flama">{singleFaculty.name}</h3>
@@ -117,7 +117,7 @@ const Faculties = () => {
                                             <div className="flex flex-col lg:flex-row border rounded-lg border-navy p-5 bg-white z-1 relative">
                                                 <button onClick={closeModal} className="absolute right-5 text-orange font-bolder text-2xl">X</button>
                                                 <div className="lg:mr-5 max-w-[320px] mx-auto mb-5">
-                                                    <img src={selectedFaculty ? selectedFaculty.img : ""} alt={selectedFaculty ? selectedFaculty.name : ""} className="max-w-[200px]"/>
+                                                    <img src={selectedFaculty ? selectedFaculty.img : ""} alt={selectedFaculty ? selectedFaculty.name : ""} className="max-w-[200px]" loading="lazy"/>
                                                 </div>
                                                 <div className="text-navy">
                                                     <h3 className="text-[20px] mb-1 font-bold font-flama">

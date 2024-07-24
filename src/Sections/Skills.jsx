@@ -53,32 +53,32 @@ const Skills = () => {
                 <Slider {...settings}>
                     <div>
                         <div className="h-[80px] bg-white w-[80px] flex justify-center items-center rounded-lg">
-                            <img src={excel} alt="excel" className="max-w-[50px] m-auto"/>
+                            <img src={excel} alt="excel" loading="lazy" className="max-w-[50px] m-auto"/>
                         </div>
                     </div>
                     <div>
                         <div className="h-[80px] bg-white w-[80px] flex justify-center items-center rounded-lg">
-                            <img src={r} alt="r" className="max-w-[50px] m-auto"/>
+                            <img src={r} alt="r" loading="lazy" className="max-w-[50px] m-auto"/>
                         </div>
                     </div>
                     <div>
                         <div className="h-[80px] bg-white w-[80px] flex justify-center items-center rounded-lg">
-                            <img src={mysql} alt="r" className="max-w-[50px] m-auto"/>
+                            <img src={mysql} alt="r" loading="lazy" className="max-w-[50px] m-auto"/>
                         </div>
                     </div>
                     <div>
                         <div className="h-[80px] bg-white w-[80px] flex justify-center items-center rounded-lg">
-                            <img src={python} alt="r" className="max-w-[50px] m-auto"/>
+                            <img src={python} alt="r" loading="lazy" className="max-w-[50px] m-auto"/>
                         </div>
                     </div>
                     <div>
                         <div className="h-[80px] bg-white w-[80px] flex justify-center items-center rounded-lg">
-                            <img src={power} alt="r" className="max-w-[50px] m-auto"/>
+                            <img src={power} alt="r" loading="lazy" className="max-w-[50px] m-auto"/>
                         </div>
                     </div>
                     <div>
                         <div className="h-[80px] bg-white w-[80px] flex justify-center items-center rounded-lg">
-                            <img src={tab} alt="r" className="max-w-[50px] m-auto"/>
+                            <img src={tab} alt="r" loading="lazy" className="max-w-[50px] m-auto"/>
                         </div>
                     </div>
                 </Slider>

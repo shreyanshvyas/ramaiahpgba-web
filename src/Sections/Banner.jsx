@@ -20,15 +20,15 @@ const Banner = () => {
 
                         <ul className="mb-5">
                             <li className="flex items-center gap-2 text-base md:text-md lg:text-lg mb-1 text-navy font-flama">
-                                <img src={checkbox} alt="checkmark" className="max-w-[15px]"/>
+                                <img src={checkbox} alt="checkmark" loading="lazy" className="max-w-[15px]"/>
                                 <span>Designed keeping in mind needs of working professionals</span>.
                             </li>
                             <li className="flex items-center gap-2 text-base md:text-md lg:text-lg mb-1 text-navy font-flama">
-                                <img src={checkbox} alt="checkmark" className="max-w-[15px]"/>   
+                                <img src={checkbox} alt="checkmark" loading="lazy" className="max-w-[15px]"/>   
                                 <span>On-campus Classes during weekend</span>
                             </li>
                             <li className="flex items-center gap-2 text-base md:text-md lg:text-lg text-navy font-flama">
-                                <img src={checkbox} alt="checkmark" className="max-w-[15px]"/>   
+                                <img src={checkbox} alt="checkmark" loading="lazy" className="max-w-[15px]"/>   
                                 <span>Taught by Experts from KPMG India</span>
                             </li>
                         </ul>

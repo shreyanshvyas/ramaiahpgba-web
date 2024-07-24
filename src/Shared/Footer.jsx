@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="container mx-auto px-3 md:px-10">
                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 md:gap-5 sm:gap-0">
                     <div className="lg:col-span-2 md:col-span-1">
-                        <img src={logo} alt="logo" className="max-w-[220px]"/>
+                        <img src={logo} alt="logo" loading="lazy" className="max-w-[220px]"/>
                         <p className="text-white mt-5 max-w-[400px] text-[15px]">A world-class management education institution with a right blend of a contextually relevant curriculum, innovative pedagogy and transparent assessment.</p>
                     </div>
 
@@ -40,7 +40,7 @@ const Footer = () => {
                     <div className="lg:col-span-1 md:col-span-1">
                         <h3 className="text-[18px] text-white font-bold mb-5">Reach Us</h3>
                         <a href="#">
-                            <img src={map} alt="map" />
+                            <img src={map} alt="map" loading="lazy" />
                         </a>
                     </div>
                 </div>
