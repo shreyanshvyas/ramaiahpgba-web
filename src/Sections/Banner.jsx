@@ -2,7 +2,7 @@ import { PiStarFourFill } from "react-icons/pi";
 import Button from "../Components/Button";
 import kpmg from "../assets/img/kpmg.png";
 import checkbox from "../assets/img/checkbox.png"
-
+import ramaiah from "../assets/img/ramaiah/6.webp"
 const Banner = () => {
     return (
         <section className="bg-[#FFF1F1] pt-[150px] pb-[50px]" id="banner">
@@ -21,11 +21,11 @@ const Banner = () => {
                         <ul className="mb-5">
                             <li className="flex items-center gap-2 text-base md:text-md lg:text-lg mb-1 text-navy font-flama">
                                 <img src={checkbox} alt="checkmark" loading="lazy" className="max-w-[15px]"/>
-                                <span>Designed keeping in mind needs of working professionals</span>.
+                                <span>Designed keeping in mind the needs of working professionals</span>.
                             </li>
                             <li className="flex items-center gap-2 text-base md:text-md lg:text-lg mb-1 text-navy font-flama">
                                 <img src={checkbox} alt="checkmark" loading="lazy" className="max-w-[15px]"/>   
-                                <span>On-campus Classes during weekend</span>
+                                <span>On-campus Classes during the weekend</span>
                             </li>
                             <li className="flex items-center gap-2 text-base md:text-md lg:text-lg text-navy font-flama">
                                 <img src={checkbox} alt="checkmark" loading="lazy" className="max-w-[15px]"/>   
@@ -41,13 +41,11 @@ const Banner = () => {
 
                         <div className="flex items-center">
                             <p className="text-[20px] text-navy">In association with</p>
-                            <img src={kpmg} alt="KPMG" className="max-w-[70px] ml-3"/>
+                            <img src={kpmg} alt="KPMG" loading="lazy" className="max-w-[70px] ml-3"/>
                         </div>
                     </div>
                     <div className="md:col-span-2 mt-7 sm:mt-0">
-                        <iframe aria-label='Registration Form' style={{ width: '100%', height:'350px', border: '2px solid #ccc', borderRadius: '8px' }} frameBorder="0" src='https://forms.zohopublic.in/bedept/form/RegistrationForm2/formperma/7Xg1fSzA2UztlQegOewLLsNIc4LY9D0RT-HYk1SxRXY'>      
-                        </iframe>
-                       {/* <BannerForm/> */}
+                        <img src={ramaiah} alt="ramaiah" className="w-[80%] h-full mx-auto" />
                     </div>
                 </div>
             </div>

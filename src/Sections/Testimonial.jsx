@@ -11,7 +11,7 @@ const Testimonial = () => {
             "img": shreya,
             "name": "Shreya Shukla",
             "title" : "PGDM (Finance & Marketing), 2019-21 | Placed @ Grant Thornton",
-            "desc": "Ramaiah institute of Management has helped me grow by imparting me with theoretical as well as practical knowledge. I would like to appreciate the placement department for the efforts they made for providing ample opportunities for students in getting placed in a reputed company."
+            "desc": "Ramaiah Institute of Management has helped me grow by imparting me with theoretical as well as practical knowledge. I would like to appreciate the placement department for the efforts they made for providing ample opportunities for students in getting placed in a reputed company."
         },
         {
             "img": rahul,
@@ -28,7 +28,7 @@ const Testimonial = () => {
     ]
 
     return (
-        <section className="md:py-[50px] pt-0 pb-10">
+        <section className="md:py-[50px] pt-0 pb-10 overflow-hidden">
             <div className="container mx-auto px-3 md:px-10">
                 <div className="mb-[50px]">
                     <Title name="Student" colored="Testimonials"/>

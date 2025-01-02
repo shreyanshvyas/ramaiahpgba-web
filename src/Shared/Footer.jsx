@@ -40,7 +40,7 @@ const Footer = () => {
                     <div className="lg:col-span-1 md:col-span-1">
                         <h3 className="text-[18px] text-white font-bold mb-5">Reach Us</h3>
                         <a href="#">
-                            <img src={map} alt="map" loading="lazy" />
+                            <img src={map} alt="map" loading="lazy" className="rounded-lg" />
                         </a>
                     </div>
                 </div>

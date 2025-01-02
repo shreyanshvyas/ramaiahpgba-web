@@ -2,18 +2,18 @@ import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from "../assets/img/logo.png"
 import Button from '../Components/Button'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
 
 const navigation = [
-  { name: 'Overview', href: '#banner', id: 'banner' },
-  { name: 'Skills', href: '#skill', id: 'skill' },
-  { name: 'About KPMG', href: '#kpmg', id: 'kpmg' },
-  { name: 'Faculty', href: '#faculty', id: 'faculty' },
-  { name: 'About RAMAIAH', href: '#ramaiah', id: 'ramaiah' },
-  { name: 'Program', href: '#program', id: 'program' },
-  { name: 'Courses', href: '#course', id: 'course' }
+  { name: 'Overview', href: '/#banner', id: 'banner' },
+  { name: 'Skills', href: '/#skill', id: 'skill' },
+  { name: 'About KPMG', href: '/#kpmg', id: 'kpmg' },
+  { name: 'Faculty', href: '/#faculty', id: 'faculty' },
+  { name: 'About RAMAIAH', href: '/#ramaiah', id: 'ramaiah' },
+  { name: 'Program', href: '/#program', id: 'program' },
+  { name: 'Courses', href: '/#course', id: 'course' }
 ]
 
 function classNames(...classes) {
@@ -25,26 +25,43 @@ const Navbar = () => {
     const [currentSection, setCurrentSection] = useState('');
 
     // Inside useEffect, modify handleScroll function
-    useEffect(() => {
-      const handleScroll = () => {
-        const scrollPosition = window.scrollY;
+
+    // useEffect(() => {
+    //   const handleScroll = () => {
+    //     const scrollPosition = window.scrollY;
   
-        for (let i = 0; i < navigation.length; i++) {
-          const section = navigation[i];
-          const sectionElement = document.querySelector(section.href);
-          if (sectionElement && sectionElement.offsetTop <= scrollPosition + 100) {
-            setCurrentSection(section.id);
-          }
-        }
-      };
+    //     for (let i = 0; i < navigation.length; i++) {
+    //       const section = navigation[i];
+    //       const sectionElement = document.querySelector(section.href);
+    //       if (sectionElement && sectionElement.offsetTop <= scrollPosition + 100) {
+    //         setCurrentSection(section.id);
+    //       }
+    //     }
+    //   };
   
-      window.addEventListener('scroll', handleScroll);
-      return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    //   window.addEventListener('scroll', handleScroll);
+    //   return () => window.removeEventListener('scroll', handleScroll);
+    // }, []);
     
+    const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
 
     return (
-        <Disclosure as="nav" className="shadow-xl bg-white py-4 fixed top-0 left-0 right-0 m-auto z-[999]">
+        <Disclosure as="nav" className="shadow-xl bg-white py-4 fixed top-0 left-0 right-0 z-[999]">
       {({ open }) => (
         <>
           <div className="container mx-auto md:px-10">
@@ -53,7 +70,7 @@ const Navbar = () => {
                 <div className="flex flex-shrink-0 items-center">
                  <a href="#">
                   <img
-                      className="max-w-[180px]"
+                      className="max-w-[180px] sm:ml-0 ml-6"
                       src={logo}
                       alt="Ramaiah"
                     />
@@ -63,15 +80,17 @@ const Navbar = () => {
                   <div className="flex space-x-2">
                   {navigation.map((item) => (
                       <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          currentSection === item.id ? 'bg-[#FFF1F1] border-b-2 border-orange' : 'text-gray-300 hover:bg-gray-700',
-                          'lg:px-2 md:px-1 py-3 text-sm font-medium font-flama'
-                        )}
-                      >
-                        {item.name}
-                      </a>
+                      key={item.name}
+                      href={item.href}
+                      className={classNames(
+                        currentSection === item.id
+                          ? 'bg-[#FFF1F1] border-b-2 border-orange'
+                          : 'text-gray-300 hover:bg-gray-700',
+                        'lg:px-2 md:px-1 py-3 text-sm font-medium font-flama'
+                      )}
+                    >
+                      {item.name}
+                    </a>
                     ))}
                   </div>
                 </div>
@@ -79,7 +98,7 @@ const Navbar = () => {
 
               <div className="inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md pr-4 pb-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (

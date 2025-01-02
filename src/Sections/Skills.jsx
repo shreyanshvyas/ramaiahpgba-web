@@ -6,7 +6,7 @@ import mysql from "../assets/img/skills/mysql.png";
 import python from "../assets/img/skills/python.png";
 import power from "../assets/img/skills/power.png";
 import tab from "../assets/img/skills/tab.png";
-import { MdOutlineKeyboardDoubleArrowRight, MdOutlineKeyboardDoubleArrowLeft  } from "react-icons/md";
+// import { MdOutlineKeyboardDoubleArrowRight, MdOutlineKeyboardDoubleArrowLeft  } from "react-icons/md";
 
 const Skills = () => {
     var settings = {
@@ -19,8 +19,8 @@ const Skills = () => {
         speed: 5000,
         autoplaySpeed: 0,
         cssEase: "linear",
-        nextArrow: <MdOutlineKeyboardDoubleArrowRight />,
-        prevArrow: <MdOutlineKeyboardDoubleArrowLeft />,
+        // nextArrow: <MdOutlineKeyboardDoubleArrowRight />,
+        // prevArrow: <MdOutlineKeyboardDoubleArrowLeft />,
         responsive: [
             {
                 breakpoint: 1024,
@@ -44,10 +44,10 @@ const Skills = () => {
     };
 
     return (
-        <section className="bg-[#FAFAFA] md:py-[50px] lg:py-[70px] py-[40px] skills-section" id="skill">
+        <section className="bg-[#FAFAFA] md:py-[50px] lg:py-[70px] py-[40px] skills-section max-w-full" id="skill">
             <div className="container mx-auto px-3 md:px-10">
                 <div className="mb-6 md:mb-8">
-                    <Title name="The Most in" colored=" Demand Skills"/>
+                    <Title name="The Most" colored="In-Demand Skills"/>
                 </div>
 
                 <Slider {...settings}>
